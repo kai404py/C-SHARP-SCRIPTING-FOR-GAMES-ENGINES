@@ -1,0 +1,15 @@
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\bin\Debug\net8.0\PrimeNumber.exe
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\bin\Debug\net8.0\PrimeNumber.deps.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\bin\Debug\net8.0\PrimeNumber.runtimeconfig.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\bin\Debug\net8.0\PrimeNumber.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\bin\Debug\net8.0\PrimeNumber.pdb
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.AssemblyInfoInputs.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.AssemblyInfo.cs
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.csproj.CoreCompileInputs.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.sourcelink.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\refint\PrimeNumber.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.pdb
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\PrimeNumber.genruntimeconfig.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\PrimeNumber\PrimeNumber\obj\Debug\net8.0\ref\PrimeNumber.dll
