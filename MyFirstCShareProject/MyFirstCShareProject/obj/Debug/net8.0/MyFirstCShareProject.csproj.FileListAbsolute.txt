@@ -1,0 +1,15 @@
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\bin\Debug\net8.0\MyFirstCShareProject.exe
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\bin\Debug\net8.0\MyFirstCShareProject.deps.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\bin\Debug\net8.0\MyFirstCShareProject.runtimeconfig.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\bin\Debug\net8.0\MyFirstCShareProject.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\bin\Debug\net8.0\MyFirstCShareProject.pdb
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.AssemblyInfoInputs.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.AssemblyInfo.cs
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.csproj.CoreCompileInputs.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.sourcelink.json
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\refint\MyFirstCShareProject.dll
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.pdb
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\MyFirstCShareProject.genruntimeconfig.cache
+C:\Users\b014852p\Documents\GitHub\CSharp-SCRIPTING-FOR-GAMES-ENGINES\MyFirstCShareProject\MyFirstCShareProject\obj\Debug\net8.0\ref\MyFirstCShareProject.dll

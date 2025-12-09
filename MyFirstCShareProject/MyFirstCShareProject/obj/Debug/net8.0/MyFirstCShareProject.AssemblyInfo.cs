@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyFirstCShareProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a08f698c8c64299196aa488a4216a73287af026")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e33e62fb88f4eb371cf8e75ad1a2504032c652a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFirstCShareProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFirstCShareProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
