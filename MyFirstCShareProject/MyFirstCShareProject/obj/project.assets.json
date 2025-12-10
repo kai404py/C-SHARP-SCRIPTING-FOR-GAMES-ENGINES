@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\b014852p\\Documents\\GitHub\\CSharp-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\MyFirstCShareProject.csproj",
+      "projectUniqueName": "C:\\Users\\b014852p\\Documents\\GitHub\\C-SHARP-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\MyFirstCShareProject.csproj",
       "projectName": "MyFirstCShareProject",
-      "projectPath": "C:\\Users\\b014852p\\Documents\\GitHub\\CSharp-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\MyFirstCShareProject.csproj",
+      "projectPath": "C:\\Users\\b014852p\\Documents\\GitHub\\C-SHARP-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\MyFirstCShareProject.csproj",
       "packagesPath": "C:\\Users\\b014852p\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\b014852p\\Documents\\GitHub\\CSharp-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\obj\\",
+      "outputPath": "C:\\Users\\b014852p\\Documents\\GitHub\\C-SHARP-SCRIPTING-FOR-GAMES-ENGINES\\MyFirstCShareProject\\MyFirstCShareProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
