@@ -13,6 +13,7 @@ public class TopDownCharacterController : MonoBehaviour
     //The inputs that we need to retrieve from the input system.
     private InputAction m_moveAction;
     private InputAction m_attackAction;
+    private InputAction m_HealthTest;
 
     //The components that we need to edit to make the player move smoothly.
     private Animator m_animator;
@@ -30,6 +31,10 @@ public class TopDownCharacterController : MonoBehaviour
 
     #endregion
 
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar HealthBar;
+
     /// <summary>
     /// When the script first initialises this gets called.
     /// Use this for grabbing components and setting up input bindings.
@@ -39,6 +44,7 @@ public class TopDownCharacterController : MonoBehaviour
         //bind movement inputs to variables
         m_moveAction = InputSystem.actions.FindAction("Move");
         m_attackAction = InputSystem.actions.FindAction("Attack");
+        m_HealthTest = InputSystem.actions.FindAction("HealthTest");
         
         //get components from Character game object so that we can use them later.
         m_animator = GetComponent<Animator>();
@@ -50,6 +56,7 @@ public class TopDownCharacterController : MonoBehaviour
     /// </summary>
     void Start()
     {
+        currentHealth = maxHealth;
         //not currently used - left here for demonstration purposes.
     }
 
@@ -71,8 +78,17 @@ public class TopDownCharacterController : MonoBehaviour
     /// Therefore, this will run more or less frequently depending on performance.
     /// Used to catch changes in variables or input.
     /// </summary>
+
+
     void Update()
     {
+
+        if (m_HealthTest.IsPressed())
+        {
+            currentHealth -= 20;
+            HealthBar.SetHeath(currentHealth);
+        }
+
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
         m_playerDirection = m_moveAction.ReadValue<Vector2>();
         
