@@ -112,11 +112,11 @@ TextureImporter:
       name: Pink_Monster_Attack1_4_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 19
-        height: 29
-      alignment: 0
+        width: 32
+        height: 32
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -134,12 +134,12 @@ TextureImporter:
       name: Pink_Monster_Attack1_4_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 19
-        height: 27
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: Pink_Monster_Attack1_4_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 28
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: Pink_Monster_Attack1_4_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 21
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 67b597e78ee4a4e729a0db6ccf9a38e3
     internalID: 0
     vertices: []
     indices: 
