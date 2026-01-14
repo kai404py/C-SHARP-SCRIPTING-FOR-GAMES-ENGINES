@@ -4,16 +4,16 @@ using UnityEngine.UI;
 
 public class healthBar : MonoBehaviour
 {
-    public Slider slider;
+    public Slider Slider;
 
     public void SetMaxHealth(int health)
     {
-        slider.maxValue = health;
-        slider.value = health;
+        Slider.maxValue = health;
+        Slider.value = health;
     }
 
     public void SetHeath(int health)
     {
-        slider.value = health;
+        Slider.value = health;
     }
 }

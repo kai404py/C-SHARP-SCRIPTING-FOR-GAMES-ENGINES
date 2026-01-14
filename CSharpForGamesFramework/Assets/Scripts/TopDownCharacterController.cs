@@ -57,6 +57,7 @@ public class TopDownCharacterController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetHeath(currentHealth);
         //not currently used - left here for demonstration purposes.
     }
 
@@ -88,6 +89,11 @@ public class TopDownCharacterController : MonoBehaviour
             currentHealth -= 20;
             healthBar.SetHeath(currentHealth);
         }
+
+        if (currentHealth <= 0)
+        {
+        
+        } 
 
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
         m_playerDirection = m_moveAction.ReadValue<Vector2>();
