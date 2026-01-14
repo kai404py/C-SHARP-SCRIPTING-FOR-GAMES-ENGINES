@@ -33,7 +33,7 @@ public class TopDownCharacterController : MonoBehaviour
 
     public int maxHealth = 100;
     public int currentHealth;
-    public HealthBar HealthBar;
+    public healthBar healthBar;
 
     /// <summary>
     /// When the script first initialises this gets called.
@@ -86,7 +86,7 @@ public class TopDownCharacterController : MonoBehaviour
         if (m_HealthTest.IsPressed())
         {
             currentHealth -= 20;
-            HealthBar.SetHeath(currentHealth);
+            healthBar.SetHeath(currentHealth);
         }
 
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.

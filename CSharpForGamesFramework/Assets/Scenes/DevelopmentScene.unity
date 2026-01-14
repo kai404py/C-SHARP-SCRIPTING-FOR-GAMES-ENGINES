@@ -8068,7 +8068,7 @@ MonoBehaviour:
   m_playerMaxSpeed: 1000
   maxHealth: 100
   currentHealth: 0
-  HealthBar: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!1 &1540936014
 GameObject:
   m_ObjectHideFlags: 0
@@ -8195,7 +8195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7865e18d4a28b0d42bd5cdd9a598af9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 1666459852}
 --- !u!114 &1666459852
 MonoBehaviour:
   m_ObjectHideFlags: 0
