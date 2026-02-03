@@ -32,6 +32,7 @@ public class TopDownCharacterController : MonoBehaviour
     #endregion
 
     public int maxHealth = 100;
+	public bool dead = false;
     public int currentHealth;
     public healthBar healthBar;
 
@@ -84,37 +85,43 @@ public class TopDownCharacterController : MonoBehaviour
     void Update()
     {
 
-        if (m_HealthTest.IsPressed())
-        {
-            currentHealth -= 20;
-            healthBar.SetHeath(currentHealth);
-        }
-
-        if (currentHealth <= 0)
-        {
-        
-        } 
-
-        // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
-        m_playerDirection = m_moveAction.ReadValue<Vector2>();
-        
-        // ~~ handle animator ~~
-        // Update the animator speed to ensure that we revert to idle if the player doesn't move.
-        m_animator.SetFloat("Speed", m_playerDirection.magnitude);
-        
-        // If there is movement, set the directional values to ensure the character is facing the way they are moving.
-        if (m_playerDirection.magnitude > 0)
-        {
-            m_animator.SetFloat("Horizontal", m_playerDirection.x);
-            m_animator.SetFloat("Vertical", m_playerDirection.y);
-        }
-
-        // check if an attack has been triggered.
-        if (m_attackAction.IsPressed())
-        {
-            // just log that an attack has been registered for now
-            // we will look at how to do this in future sessions.
-            Debug.Log("Attack!");
-        }
+		if (!dead) {
+            if (m_HealthTest.IsPressed())
+            {
+                currentHealth -= 20;
+                healthBar.SetHeath(currentHealth);
+            }
+    
+            if (currentHealth <= 0)
+            {
+            	dead = true;
+				m_animator.SetTrigger("Dead");
+            } 
+    
+            // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
+            m_playerDirection = m_moveAction.ReadValue<Vector2>();
+            
+            // ~~ handle animator ~~
+            // Update the animator speed to ensure that we revert to idle if the player doesn't move.
+            m_animator.SetFloat("Speed", m_playerDirection.magnitude);
+            
+            // If there is movement, set the directional values to ensure the character is facing the way they are moving.
+            if (m_playerDirection.magnitude > 0)
+            {
+                m_animator.SetFloat("Horizontal", m_playerDirection.x);
+                m_animator.SetFloat("Vertical", m_playerDirection.y);
+            }
+    
+            // check if an attack has been triggered.
+            if (m_attackAction.IsPressed())
+            {
+                // just log that an attack has been registered for now
+                // we will look at how to do this in future sessions.
+                Debug.Log("Attack!");
+            }
+		} else {
+			m_animator.SetFloat("Horizontal", 0);
+            m_animator.SetFloat("Vertical", 0);
+		}
     }
 }
