@@ -34,7 +34,7 @@ public class TopDownCharacterController : MonoBehaviour
     public int maxHealth = 100;
 	public bool dead = false;
     public int currentHealth;
-    public healthBar healthBar;
+    public HealthBar healthBar;
 
     /// <summary>
     /// When the script first initialises this gets called.

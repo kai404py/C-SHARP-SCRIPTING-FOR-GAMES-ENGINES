@@ -2,18 +2,18 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class healthBar : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
-    public Slider Slider;
+    public Slider slider;
 
     public void SetMaxHealth(int health)
     {
-        Slider.maxValue = health;
-        Slider.value = health;
+        slider.maxValue = health;
+        slider.value = health;
     }
 
     public void SetHeath(int health)
     {
-        Slider.value = health;
+        slider.value = health;
     }
 }
