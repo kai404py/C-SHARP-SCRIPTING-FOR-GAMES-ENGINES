@@ -9,6 +9,11 @@ public class SimpleEnermy : MonoBehaviour
     {
         m_Player = FindObjectOfType<TopDownCharacterController>().transform;   
     }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("test");
+    }
 
     // Update is called once per frame
     void Update()
