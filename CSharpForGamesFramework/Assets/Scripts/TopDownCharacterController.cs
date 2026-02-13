@@ -141,7 +141,15 @@ public class TopDownCharacterController : MonoBehaviour
 		} else {
 			m_animator.SetFloat("Horizontal", 0);
             m_animator.SetFloat("Vertical", 0);
-			
+			GameObject[] textToShow = GameObject.FindGameObjectsWithTag("dead text");
+            foreach (GameObject obj in textToShow)
+            {
+                UnityEngine.UI.Text textComponent = obj.GetComponent<UnityEngine.UI.Text>();
+    			if (textComponent != null)
+    			{
+        			
+    			}
+            }
 		}
     }
 }
