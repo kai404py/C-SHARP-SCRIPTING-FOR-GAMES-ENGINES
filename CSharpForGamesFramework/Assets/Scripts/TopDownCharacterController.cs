@@ -27,10 +27,16 @@ public class TopDownCharacterController : MonoBehaviour
     //The speed at which the player moves
     [SerializeField] private float m_playerSpeed = 200f;
     //The maximum speed the player can move
-    [SerializeField] private float m_playerMaxSpeed = 1000f;
+    [SerializeField] private float m_playerMaxSpeed = 1000f;	
+
+	[Header("Attack parameters")]
+	[SerializeField] private GameObject m_bulletPrefab;
+	[SerializeField] private float m_attackCooldown = 1f;
+	private float m_lastAttackTime = 0f;
 
     #endregion
 
+	public float bullet_damager = 10;
     public int maxHealth = 100;
 	public bool dead = false;
     public int currentHealth;
@@ -81,6 +87,20 @@ public class TopDownCharacterController : MonoBehaviour
     /// Used to catch changes in variables or input.
     /// </summary>
 
+    private void Attack()
+    {
+        Vector2 mousePos = Mouse.current.position.ReadValue();
+        
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));
+        
+        Vector2 shootDirection = (mouseWorldPos - transform.position).normalized;
+        
+        GameObject bullet = Instantiate(m_bulletPrefab, transform.position, Quaternion.identity);
+        bullet.GetComponent<PlayerBullet>().SetDirection(shootDirection);
+        bullet.GetComponent<PlayerBullet>().SetDamage(bullet_damager);
+        
+        Debug.Log("Shot bullet towards mouse at direction: " + shootDirection);
+    }
 
     void Update()
     {
@@ -113,15 +133,15 @@ public class TopDownCharacterController : MonoBehaviour
             }
     
             // check if an attack has been triggered.
-            if (m_attackAction.IsPressed())
+            if (m_attackAction.IsPressed() && Time.time >= m_lastAttackTime + m_attackCooldown)
             {
-                // just log that an attack has been registered for now
-                // we will look at how to do this in future sessions.
-                Debug.Log("Attack!");
+                Attack();
+                m_lastAttackTime = Time.time;
             }
 		} else {
 			m_animator.SetFloat("Horizontal", 0);
             m_animator.SetFloat("Vertical", 0);
+			
 		}
     }
 }
