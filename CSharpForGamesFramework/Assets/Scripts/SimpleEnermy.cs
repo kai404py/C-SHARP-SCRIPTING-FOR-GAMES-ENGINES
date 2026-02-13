@@ -22,8 +22,9 @@ public class SimpleEnermy : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.CompareTag("PlayerBullet"))
+       	if (collision.CompareTag("PlayerBullet"))
         {
+			Debug.Log("test");
             PlayerBullet bullet = collision.GetComponent<PlayerBullet>();
             float damage = bullet.GetDamage();
             TakeDamage((int)damage);

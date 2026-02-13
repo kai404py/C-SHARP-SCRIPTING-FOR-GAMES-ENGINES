@@ -139,16 +139,15 @@ public class TopDownCharacterController : MonoBehaviour
                 m_lastAttackTime = Time.time;
             }
 		} else {
+			m_playerDirection.x = 0;
+            m_playerDirection.y = 0;
 			m_animator.SetFloat("Horizontal", 0);
             m_animator.SetFloat("Vertical", 0);
-			GameObject[] textToShow = GameObject.FindGameObjectsWithTag("dead text");
-            foreach (GameObject obj in textToShow)
+
+			GameObject[] objectsToDelete = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject obj in objectsToDelete)
             {
-                UnityEngine.UI.Text textComponent = obj.GetComponent<UnityEngine.UI.Text>();
-    			if (textComponent != null)
-    			{
-        			
-    			}
+                Destroy(obj);
             }
 		}
     }
