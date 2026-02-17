@@ -31,12 +31,4 @@ public class PlayerBullet : MonoBehaviour
     {
         transform.Translate(m_direction * m_speed * Time.deltaTime);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy"))
-        {
-            
-        }
-    }
 }

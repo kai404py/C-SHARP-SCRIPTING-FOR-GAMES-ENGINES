@@ -41,6 +41,7 @@ public class TopDownCharacterController : MonoBehaviour
 	public bool dead = false;
     public int currentHealth;
     public HealthBar healthBar;
+    public GameManager GameManager;
 
     /// <summary>
     /// When the script first initialises this gets called.
@@ -100,6 +101,13 @@ public class TopDownCharacterController : MonoBehaviour
         bullet.GetComponent<PlayerBullet>().SetDamage(bullet_damager);
     }
 
+    void Die()
+    {
+        GameManager.ShowDeadMenu();
+        dead = true;
+        m_animator.SetTrigger("Dead");
+    }
+
     void Update()
     {
 
@@ -112,8 +120,7 @@ public class TopDownCharacterController : MonoBehaviour
     
             if (currentHealth <= 0)
             {
-            	dead = true;
-				m_animator.SetTrigger("Dead");
+                Die();
             } 
     
             // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.

@@ -3,11 +3,17 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [Header("Spawn Settings")]
+    
+    // enemy pramitors
     [SerializeField] private GameObject enemyPrefab; 
     [SerializeField] private int enemyCount = 5; 
     [SerializeField] private int enemyHealth = 100; 
+    
+    //propity pramitors
     [SerializeField] private float spawnRadius = 10f;
     [SerializeField] private Vector2 spawnCenter = Vector2.zero; 
+    
+    
     
     [Header("Delete Settings")]
     [SerializeField] private string tagToDelete = "Barrier";
@@ -16,6 +22,8 @@ public class EnemyManager : MonoBehaviour
     private int[] aliveEnemyIds;
     private int[] deadEnemyIds;
 
+    
+    //Spawns the enemys on start game
     void Start()
     {
         aliveEnemyIds = new int[enemyCount];
@@ -28,7 +36,11 @@ public class EnemyManager : MonoBehaviour
         
         SpawnEnemies();
     }
-
+    
+    /// <summary>
+    /// When called it will spawn the enemys at a random location within the propity pramitors
+    /// It will also give each enemy a unique ID and add that ID to the aliveEnemyIds array 
+    /// </summary>
     void SpawnEnemies()
     {
         for (int i = 0; i < enemyCount; i++)
@@ -52,6 +64,7 @@ public class EnemyManager : MonoBehaviour
         aliveEnemyCount = enemyCount;
     }
 
+    // When the enemy dies updates the dead enemys array and if all enimies are dead removes the barriers to allow the player to the next level
     public void EnemyDied(int ID)
     {
         bool alreadyDead = false;
