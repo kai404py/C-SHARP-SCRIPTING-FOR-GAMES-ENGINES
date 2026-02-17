@@ -98,8 +98,6 @@ public class TopDownCharacterController : MonoBehaviour
         GameObject bullet = Instantiate(m_bulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<PlayerBullet>().SetDirection(shootDirection);
         bullet.GetComponent<PlayerBullet>().SetDamage(bullet_damager);
-        
-        Debug.Log("Shot bullet towards mouse at direction: " + shootDirection);
     }
 
     void Update()

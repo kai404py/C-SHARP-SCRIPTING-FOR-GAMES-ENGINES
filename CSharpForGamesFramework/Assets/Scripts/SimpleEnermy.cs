@@ -8,6 +8,7 @@ public class SimpleEnermy : MonoBehaviour
     [SerializeField] private float m_attackCooldown = 1f;
     [SerializeField] private int m_attackDamage = 10;
     
+    public int EnemyID;
     public HealthBar healthBar;
     public Transform m_Player;
     
@@ -16,6 +17,7 @@ public class SimpleEnermy : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(EnemyID);
         m_PlayerController = FindObjectOfType<TopDownCharacterController>();
         m_Player = m_PlayerController.transform;   
     }
@@ -24,7 +26,6 @@ public class SimpleEnermy : MonoBehaviour
     {
        	if (collision.CompareTag("PlayerBullet"))
         {
-			Debug.Log("test");
             PlayerBullet bullet = collision.GetComponent<PlayerBullet>();
             float damage = bullet.GetDamage();
             TakeDamage((int)damage);
@@ -50,7 +51,7 @@ public class SimpleEnermy : MonoBehaviour
 
     void Die()
     {
-        FindObjectOfType<EnemyManager>().EnemyDied();
+        FindObjectOfType<EnemyManager>().EnemyDied(EnemyID);
         Destroy(gameObject);
     }
 
@@ -82,8 +83,6 @@ public class SimpleEnermy : MonoBehaviour
             m_PlayerController.healthBar.SetHeath(m_PlayerController.currentHealth);
             
             m_lastAttackTime = Time.time;
-            
-            Debug.Log("Enemy attacked player! Player health: " + m_PlayerController.currentHealth);
         }
     }
 

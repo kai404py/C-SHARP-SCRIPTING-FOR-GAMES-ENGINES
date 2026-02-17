@@ -13,9 +13,19 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private string tagToDelete = "Barrier";
     
     private int aliveEnemyCount;
+    private int[] aliveEnemyIds;
+    private int[] deadEnemyIds;
 
     void Start()
     {
+        aliveEnemyIds = new int[enemyCount];
+        deadEnemyIds = new int[enemyCount];
+        
+        for (int i = 0; i < deadEnemyIds.Length; i++)
+        {
+            deadEnemyIds[i] = -1;
+        }
+        
         SpawnEnemies();
     }
 
@@ -30,6 +40,8 @@ public class EnemyManager : MonoBehaviour
             
             SimpleEnermy enemyScript = enemy.GetComponent<SimpleEnermy>();
             enemyScript.SetHealth(enemyHealth);
+            enemyScript.EnemyID = i;
+            aliveEnemyIds[i] = i;
             
             if (!enemy.CompareTag("Enemy"))
             {
@@ -38,17 +50,36 @@ public class EnemyManager : MonoBehaviour
         }
         
         aliveEnemyCount = enemyCount;
-        Debug.Log("Spawned " + enemyCount + " enemies");
     }
 
-    public void EnemyDied()
+    public void EnemyDied(int ID)
     {
-        aliveEnemyCount--;
-        Debug.Log("Enemies remaining: " + aliveEnemyCount);
+        bool alreadyDead = false;
+        for (int i = 0; i < deadEnemyIds.Length; i++)
+        {
+            if (deadEnemyIds[i] == ID)
+            {
+                alreadyDead = true;
+                break;
+            }
+        }
+        
+        if (!alreadyDead)
+        {
+            for (int i = 0; i < deadEnemyIds.Length; i++)
+            {
+                if (deadEnemyIds[i] == -1)
+                {
+                    deadEnemyIds[i] = ID;
+                    break;
+                }
+            }
+        
+            aliveEnemyCount--;
+        }
         
         if (aliveEnemyCount <= 0)
         {
-            Debug.Log("All enemies dead! Deleting object.");
             GameObject[] objectsToDelete = GameObject.FindGameObjectsWithTag(tagToDelete);
             foreach (GameObject obj in objectsToDelete)
             {

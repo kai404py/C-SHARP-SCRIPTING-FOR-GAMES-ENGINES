@@ -7,10 +7,14 @@ public class MovingObject : MonoBehaviour
     bool goToEnd = true;
 
     private Vector2 targetDestination;
+    private TopDownCharacterController m_PlayerController;
+    private int m_attackDamage = 10;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         targetDestination = m_startWaypoint.position;
+        m_PlayerController = FindObjectOfType<TopDownCharacterController>();
     }
 
     void ChangeTarget()
@@ -30,6 +34,11 @@ public class MovingObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ChangeTarget();
+        if (collision.CompareTag("Player"))
+        {
+            m_PlayerController.currentHealth -= m_attackDamage;
+            m_PlayerController.healthBar.SetHeath(m_PlayerController.currentHealth);
+        }
     }
 
     // Update is called once per frame
